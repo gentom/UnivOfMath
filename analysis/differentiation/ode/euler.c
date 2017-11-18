@@ -29,7 +29,7 @@ int main(void)
         k0[1]=dt*f2(t,x,v);
         x=x+k0[0];
         v=v+k0[1];
-        printf(output,"%f %f %f\n",t,x,v);
+        printf("%f %f %f\n",t,x,v);
     }
 
     return 0;
