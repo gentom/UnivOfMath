@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-def taylor(terms, inp, seq):
+def taylor(term, inp, seq):
     sum = seq
-    for i in range(terms):
-        seq *= inp/i # recursion
+    for t in range(1,term):
+        seq *= inp/t # recursion
         sum += seq
     return sum
 
@@ -14,4 +14,4 @@ if __name__ == '__main__':
     inp = float(input('input: '))
     num = int(input('num of term: '))
     result = taylor(num, inp, seq)
-    print(seq)
+    print(result)
